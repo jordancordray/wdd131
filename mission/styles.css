@@ -45,7 +45,7 @@ footer {
     padding: 30px;
 }
 
-.logo {
+#logo {
     display: block;
     width: 150px;
     margin: auto;
@@ -55,3 +55,19 @@ li {
     padding: 10px;
 }
 
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #58b2ee;
+}
+
+.dark .content {
+    border: 1px solid white;
+}
+
+.dark .title {
+    border-bottom: 1px solid white;
+}
