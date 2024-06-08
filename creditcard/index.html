@@ -10,6 +10,13 @@
 <body>
     <form action="">
         <div id="card-container">
+            <div id="card-back">
+                <div class="black-bar"></div>
+                <div class="CVV">
+                    <label for="cvv-input">CVC/CVV</label>
+                    <input class="cvv-input" type="text" name="cvv-input" id="cvv-input" placeholder="xxx" required maxlength="3">
+                </div>
+            </div>
             <div id="card-front">
                 <p class="total">TOTAL: $199</p>
                 <img class="card-image" 
@@ -17,23 +24,16 @@
                 height="55px">
                 <div class="cardnum">
                     <label for="cardnum-input">CARD NUMBER</label>
-                    <input class="cardnum-input" type="text" name="cardnum-input" placeholder="1234 5678 9101 1020" required maxlength="16">
+                    <input class="cardnum-input" type="text" name="cardnum-input" id="cardnum-input" placeholder="1234 5678 9101 1020" required maxlength="16">
                 </div>
                 <div class="cardholder">
                     <label for="cardholder-input">CARD HOLDER</label>
-                    <input class="cardholder-input" type="text" name="cardholder-input" placeholder="John Doe" required>
+                    <input class="cardholder-input" type="text" name="cardholder-input" id="cardholder-input" placeholder="John Doe" required>
                 </div>
                 <div class="expiration">
                     <label for="expiration-input">EXPIRATION</label>
-                    <input class="expiration-input" type="text" name="expiration-input" placeholder="MM" required maxlength="2">
-                    <input class="expiration-input" type="text" name="expiration-input" placeholder="YY" required maxlength="2">
-                </div>
-            </div>
-            <div id="card-back">
-                <div class="black-bar"></div>
-                <div class="CVV">
-                    <label for="CVV">CVC/CVV</label>
-                    <input class="cvv-input" type="text" name="cvv-input" placeholder="xxx" required maxlength="3">
+                    <input class="expiration-input" type="text" name="expiration-input" id="expiration-input" placeholder="MM" required maxlength="2">
+                    <input class="expiration-input" type="text" name="expiration-input" id="expiration-year-input" placeholder="YY" required maxlength="2">
                 </div>
             </div>
             <button id="card-btn">Submit</button>

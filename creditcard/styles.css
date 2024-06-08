@@ -23,7 +23,7 @@
     border-radius: 10px;
     grid-column: 2/3;
     grid-row: 2/3;
-    z-index: -1;
+    
 }
 
 #card-btn {
@@ -92,6 +92,7 @@
     margin-right: 10px;
     grid-column: 2/3;
     grid-row: 2/3;
+    
 }
 
 .cvv-input {
