@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+ :root {
+ --primary-color: #1B98E0;
+ --secondary-color: #59c3c3;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: "Amatic SC";
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--primary-font);
+}
+
+ img {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+}
+
+
+.description {
+    display: none;
+}
+
+
+.social img, .logo{
+    width: 50px;
+}
+
+.search-btn{
+    width: 30px;
+    height: 30px;
+}
+
+.title {
+    font-size: 3em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px;
+    margin-bottom: 0;
+}
+
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 30px;
+    border-bottom: 1px solid var(--text-dark);
+}
+
+
+#search-recipe{
+    width: 80%;
+    height: 30px;
+}
+
+.recipe {
+    border: 1px solid var(--text-dark);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.tag {
+    width: 100px;
+    border: 1px solid var(--text-dark);
+    margin: 20px;
+}
+
+.tag p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.recipe h1 {
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 3em;
+}
+
+.rating{
+    margin-left: 20px;
+}
+
+.recipe-desc{
+    align-items: left;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #1477b1;
+}
+
+@media screen and (min-width: 600px) {
+    .recipe{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe img {
+        width: 50%;
+    }
+
+    .recipe-desc {
+        margin-left: 30px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    footer a {
+        margin: 20px;
+    }
+
+    .social{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+}
+
+@media (min-width: 960px) {
+    .recipe {
+        max-width: 960px;
+    }
+
+    .description{
+        display: block;
+        text-align: left;
+        margin: 20px;
+    }
+}
