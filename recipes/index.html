@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Book</title>
     <link rel="stylesheet" href="./recipes.css">
-    <script src="./main.js"></script>
+    <script src="./main.js" type="module"></script>
     <meta name="description" content="Discover the best recipes for all to enjoy in this recipe book.">
 
     <meta property="og:title" content="Recipe Book">
@@ -25,32 +25,13 @@
             <main>
                 <div class="search">
                         <input id="search-recipe" type="text" name="search-recipe" placeholder="Find a recipe">
-                        <button class="search-btn"><img  src="./images/search.svg" alt="search"></button>
+                        <button id="search-btn"><img  src="./images/search.svg" alt="search"></button>
                 </div>
-                <div class="recipe">
-                    <img src="./images/apple-crisp.jpg" alt="Apple Crisp">
-                    <div class="recipe-desc">
-                        <div class="tag">
-                            <p>dessert</p>
-                        </div>
-                        <h1>Apple Crisp</h1>
-                        <span
-                            class="rating"
-                            role="img"
-                            aria-label="Rating: 4 out of 5 stars"
-                        >
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                            <span aria-hidden="true" class="icon-star-empty">☆</span>
-                        </span>
-                        <p class="description">This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.</p>
-                    </div>  
+                <div id="recipe">
+                
                 </div>
             </main>
             <footer>
-                
                 <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
                 <div class="social">
                     <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->

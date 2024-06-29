@@ -32,7 +32,7 @@ h1 {
     width: 50px;
 }
 
-.search-btn{
+#search-btn{
     width: 30px;
     height: 30px;
 }
@@ -79,11 +79,9 @@ header {
     width: 100px;
     border: 1px solid var(--text-dark);
     margin: 20px;
-}
-
-.tag p{
     text-align: center;
     font-size: 1.5em;
+    list-style-type: none;
 }
 
 .recipe h1 {
