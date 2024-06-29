@@ -96,6 +96,3 @@ function filterRecipes(query){
 	const sorted = filteredRecipes.sort((a, b) => a.name.localeCompare(b.name));
 	return sorted
 }
-
-// why wont this work
-
